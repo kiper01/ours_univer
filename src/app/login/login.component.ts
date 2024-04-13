@@ -1,28 +1,19 @@
-import { Component, NgModule } from '@angular/core';
+import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
+  standalone: true,
+  imports: [FormsModule],
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent {
-  username: string = ''; // Инициализация переменной
-  password: string = ''; // Инициализация переменной
 
-  constructor() { }
+export class LoginComponent {
+  username: string = '';
+  password: string = '';
 
   login() {
-    // Ваша логика аутентификации
+    this.username = 'ok';
   }
 }
-
-@NgModule({
-  imports: [
-    FormsModule
-  ],
-  declarations: [
-    LoginComponent
-  ]
-})
-export class LoginModule {}
