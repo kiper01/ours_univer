@@ -78,10 +78,11 @@
     margin: 0 auto;
   }
   
- .dvfu-icon{
+  .dvfu-icon{
     padding-left: 20px;
     padding-top: 20px;
     width: 80%;
     margin-bottom: 20px;
-    content: url('/src/assets/our_univer.svg');
+    content: url('https://univer.dvfu.ru/assets/d2ce559236f181a855fe1d8d25eea01d/img/img-myuniver-logo.svg');
 }
+

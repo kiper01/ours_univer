@@ -1,8 +1,7 @@
 .request{
     height: 300px;
-    width: 1400px;
+    width: 60vw;
     position: relative;
-    align-items: center;
     padding: 25px;
     margin-top: 25px;
     background-color: white;
