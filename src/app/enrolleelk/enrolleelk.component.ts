@@ -40,7 +40,28 @@ export class EnrolleelkComponent {
           direction: 'НАПРАВЛЕНИЕ 3',
           price: 80000,
           educationStartMonth: 'МАЙ'}, 
-        state: 'В работе' }        
+        state: 'В работе' },
+        { program: { 
+          type: 'Общеразвивающая программа' ,
+          format: 'Онлайн',
+          direction: 'НАПРАВЛЕНИЕ 1',
+          price: 100000,
+          educationStartMonth: 'МАЙ'}, 
+        state: 'В работе' },
+        { program: { 
+          type: 'Общеразвивающая программа' ,
+          format: 'Онлайн',
+          direction: 'НАПРАВЛЕНИЕ 2',
+          price: 7000,
+          educationStartMonth: 'МАЙ'}, 
+        state: 'В работе' },
+        { program: { 
+          type: 'Общеразвивающая программа' ,
+          format: 'Онлайн',
+          direction: 'НАПРАВЛЕНИЕ 3',
+          price: 80000,
+          educationStartMonth: 'МАЙ'}, 
+        state: 'В работе' }  
       ];
     
       get items() {
