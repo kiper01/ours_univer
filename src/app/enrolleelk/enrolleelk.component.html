@@ -8,14 +8,14 @@
 
        <div class="main-buttons">
             <button class="main-button" (click)="openRequests()">Мои заявки</button>
-            <button class="main-button">Все курсы</button>
+            <button class="main-button" routerLink="/">Все курсы</button>
        </div>
 
         <div class="btn-group">
             <button class="btn-with-icon">
                 <i class="fa-regular fa-circle-question"></i>Поддержка
             </button>
-            <button class="btn-with-icon" (click)="openProfile()">
+            <button class="btn-with-icon" routerLink="/EnrolleelkProfile">
                 <i class="fa-regular fa-user"></i>Фамилия И.О.
             </button>
         </div>
@@ -65,4 +65,5 @@
 
     </div>
 </div>
+<router-outlet></router-outlet>
 

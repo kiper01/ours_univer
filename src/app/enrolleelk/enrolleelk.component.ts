@@ -2,13 +2,14 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';  
 import { RequestComponent } from "../request/request.component";
 import { EnrolleeRequest } from '../Entities/Request';
+import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
     selector: 'app-enrolleelk',
     standalone: true,
     templateUrl: './enrolleelk.component.html',
     styleUrl: './enrolleelk.component.css',
-    imports: [CommonModule, RequestComponent]
+    imports: [CommonModule, RequestComponent, RouterLink, RouterOutlet]
 })
 export class EnrolleelkComponent {
     isRequestsOpen: boolean = true;
@@ -69,7 +70,10 @@ export class EnrolleelkComponent {
       }
 
     openProfile(){
-        this.isRequestsOpen = false;
-        this.isProfileOpen = true;
+      
+    }
+
+    openCourses(){
+      
     }
 }
