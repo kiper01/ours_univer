@@ -1,0 +1,46 @@
+<!-- modal.component.html -->
+
+<div class="modal" [ngClass]="{'show': callRequestOpen}" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+      
+        <!-- Заголовок модального окна -->
+        <div class="modal-header">
+          <h4 class="modal-title">Заявка на звонок</h4>
+          <button type="button" class="close" (click)="closeCallRequest()">&times;</button>
+        </div>
+        
+        <!-- Тело модального окна -->
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="firstName">Имя:</label>
+              <input type="text" class="form-control" id="firstName">
+            </div>
+            <div class="form-group">
+              <label for="lastName">Фамилия:</label>
+              <input type="text" class="form-control" id="lastName">
+            </div>
+            <div class="form-group">
+              <label for="phone">Номер телефона:</label>
+              <input type="text" class="form-control" id="phone">
+            </div>
+            <div class="form-group">
+              <label for="email">Почта:</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+          </form>
+        </div>
+        
+        <!-- Подвал модального окна -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Отправить</button>
+          <button type="button" class="btn btn-secondary" (click)="closeCallRequest()">Закрыть</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal-backdrop fade show" [ngClass]="{'show': callRequestOpen}" *ngIf="callRequestOpen"></div>
+  

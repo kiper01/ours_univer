@@ -3,7 +3,10 @@
     <div class="login-box">
       <div class="login-button">
         <h2>Dev menu</h2>
-        <button class="btn btn-primary btn-lg login-button" routerLink="/">Заявка на звонок</button>
+
+        <button class="btn btn-primary btn-lg login-button" (click)="openCallRequest()">Заявка на звонок</button>
+        <app-call-request *ngIf="callRequestOpen"></app-call-request>
+
         <button class="btn btn-primary btn-lg login-button" routerLink="/">Заявка на курс</button>
         <a class="btn btn-primary btn-lg login-button" routerLink="/Enrolleelk">ЛК абитуриента</a>
         <a class="btn btn-primary btn-lg login-button" routerLink="/Curatorlk">ЛК куратора</a>
