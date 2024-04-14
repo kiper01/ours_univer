@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';  
-import { RequestspanelComponent } from "../requestspanel/requestspanel.component";
-import { ProfilepanelComponent } from "../profilepanel/profilepanel.component";
+import { RequestComponent } from "../request/request.component";
+import { EnrolleeRequest } from '../Entities/Request';
 
 @Component({
     selector: 'app-enrolleelk',
     standalone: true,
     templateUrl: './enrolleelk.component.html',
     styleUrl: './enrolleelk.component.css',
-    imports: [RequestspanelComponent, ProfilepanelComponent,CommonModule]
+    imports: [CommonModule, RequestComponent]
 })
 export class EnrolleelkComponent {
     isRequestsOpen: boolean = true;
@@ -18,6 +18,34 @@ export class EnrolleelkComponent {
         this.isRequestsOpen = true;
         this.isProfileOpen = false;
     }
+    
+    requests: EnrolleeRequest[] = [
+        { program: { 
+          type: 'Общеразвивающая программа' ,
+          format: 'Онлайн',
+          direction: 'НАПРАВЛЕНИЕ 1',
+          price: 100000,
+          educationStartMonth: 'МАЙ'}, 
+        state: 'В работе' },
+        { program: { 
+          type: 'Общеразвивающая программа' ,
+          format: 'Онлайн',
+          direction: 'НАПРАВЛЕНИЕ 2',
+          price: 7000,
+          educationStartMonth: 'МАЙ'}, 
+        state: 'В работе' },
+        { program: { 
+          type: 'Общеразвивающая программа' ,
+          format: 'Онлайн',
+          direction: 'НАПРАВЛЕНИЕ 3',
+          price: 80000,
+          educationStartMonth: 'МАЙ'}, 
+        state: 'В работе' }
+      ];
+    
+      get items() {
+          return this.requests;
+      }
 
     openProfile(){
         this.isRequestsOpen = false;

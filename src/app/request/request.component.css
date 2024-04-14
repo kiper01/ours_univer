@@ -1,7 +1,71 @@
 .request{
-    height: 250px;
-    width: auto;
-    border-radius: 20px;
+    height: 300px;
+    width: 1400px;
+    position: relative;
+    align-items: center;
+    padding: 25px;
+    margin-top: 25px;
     background-color: white;
-    margin: 25px;
+    border-radius: 20px;
 }
+
+label{
+    font-size: 18px;
+}
+
+.direction-label{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.type-label{
+    position: absolute;
+    font-weight: 600;
+    right: 35px;
+    top: 35px;
+}
+
+.format-label{
+    position: absolute;
+    right: 35px;
+    top: 70px;
+}
+
+.label-with-bkg {
+    border-radius: 10px;
+    background-color: #2fc1ff;
+    color: white;
+    padding: 1px 5px 1px 5px;
+    margin: 2px;
+}
+
+.state-label{
+    border-radius: 10px;
+    background-color: aquamarine;
+    color:white;
+    padding: 5px;
+    position: absolute;
+    left: 25px;
+    bottom: 35px;
+}
+
+.cancel-button{
+    width: 150px;
+    height: 45px;
+    border-radius: 12px;
+    background-color: white;
+    color: black; 
+    font-size: 16px;
+    cursor: pointer; 
+    border: none;
+    
+    position: absolute;
+    right: 35px;
+    bottom: 35px;
+  }
+
+  .cancel-button:hover {
+    color: white;
+    background-color: #ff2f2f;
+    box-shadow: 2px 2px 5px 0px rgba(255, 60, 34, 0.8);
+  }

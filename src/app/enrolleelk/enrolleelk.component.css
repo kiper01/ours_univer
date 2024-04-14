@@ -77,3 +77,52 @@
     width: 80%;
     content: url('https://univer.dvfu.ru/assets/d2ce559236f181a855fe1d8d25eea01d/img/img-myuniver-logo.svg');
 }
+
+.requests-panel{
+  height: 1200px;
+  width: 1800px;
+
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+
+.profile-panel{
+  align-items: center;
+  position: relative;
+  left: 150px;
+  top: 80px;
+}
+
+.inputs-panel{
+  padding: 50px;
+  border-radius: 25px;
+  background-color: white;
+
+  width: 700px;
+  position: relative;
+
+  height: 100%;
+  align-items: center;
+  display: grid; 
+  grid-template-columns: 300px 300px; 
+}
+
+.main-label{
+  font-size: 40px;
+  font-weight: 600;
+  padding-bottom: 25px;
+
+}
+
+.input-label{
+  width: 100px;
+  padding-right: 50px;
+  padding-bottom: 15px;
+  font-size: 18px;
+}

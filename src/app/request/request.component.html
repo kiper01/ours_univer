@@ -1,7 +1,14 @@
 <div class="request">
-    <label [for]="request.program.type">{{request.program.type}}</label><br>
-    <label [for]="request.program.format">{{request.program.format}}</label><br>
-    <label [for]="request.program.direction">{{request.program.direction}}</label><br>
-    <label [for]="request.program.price">{{request.program.price}}</label><br>
-    <label [for]="request.program.educationStartMonth">{{request.program.educationStartMonth}}</label><br>
+    <label class="direction-label" [for]="request.program.direction">{{request.program.direction}}</label><br>
+
+    <label class="type-label" [for]="request.program.type">{{request.program.type}}</label>
+    <label class="format-label" [for]="request.program.format">Формат:&nbsp;{{request.program.format}}</label>
+
+    <label>Старт обучения:&nbsp;</label><label class="label-with-bkg" [for]="request.program.educationStartMonth">{{request.program.educationStartMonth}}</label><br>
+
+    <label>Стоимость:&nbsp;</label><label class="label-with-bkg" [for]="request.program.price">{{request.program.price}}</label><br>
+
+    <label class="state-label" [for]="request.program.price">{{request.state}}</label><br>
+
+    <button class="cancel-button" (click)="cancel()">Отменить заявку</button>
 </div>
