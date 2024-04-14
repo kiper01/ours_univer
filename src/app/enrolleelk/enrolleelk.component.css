@@ -11,7 +11,7 @@
 }
 
 
-.left-side {
+.leftpanel {
     height: 100%;
     width: 300px;
     background-color: white;
@@ -93,6 +93,8 @@
 
 
 .profile-panel{
+  width: 700px;
+  height: 850px;
   align-items: center;
   position: relative;
   left: 150px;
@@ -125,4 +127,14 @@
   padding-right: 50px;
   padding-bottom: 15px;
   font-size: 18px;
+}
+
+.save-button{
+  position: absolute;
+  right: 0;
+  bottom: -150px;
+    width: 150px;
+    border-radius: 12px;
+    height: 45px;
+    box-shadow: 2px 2px 5px 0px rgba(126, 225, 255, 0.8);
 }
