@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { LeftpanelComponent } from "../leftpanel/leftpanel.component";
+import { CommonModule } from '@angular/common';  
 import { RequestspanelComponent } from "../requestspanel/requestspanel.component";
 import { ProfilepanelComponent } from "../profilepanel/profilepanel.component";
 
@@ -8,8 +8,19 @@ import { ProfilepanelComponent } from "../profilepanel/profilepanel.component";
     standalone: true,
     templateUrl: './enrolleelk.component.html',
     styleUrl: './enrolleelk.component.css',
-    imports: [LeftpanelComponent, RequestspanelComponent, ProfilepanelComponent]
+    imports: [RequestspanelComponent, ProfilepanelComponent,CommonModule]
 })
 export class EnrolleelkComponent {
+    isRequestsOpen: boolean = true;
+    isProfileOpen: boolean = false;
 
+    openRequests(){
+        this.isRequestsOpen = true;
+        this.isProfileOpen = false;
+    }
+
+    openProfile(){
+        this.isRequestsOpen = false;
+        this.isProfileOpen = true;
+    }
 }

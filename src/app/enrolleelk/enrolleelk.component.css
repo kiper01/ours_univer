@@ -1,6 +1,6 @@
 
 .rightpanel {
-    background-color: #d4d4d4d6;
+    background-color: #F2FAFE;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -8,4 +8,72 @@
     top: 0;
     left: 300px;
     align-items: center;
+}
+
+
+.left-side {
+    height: 100%;
+    width: 300px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    align-items: center;
+}
+
+ button {
+    background-color: #0096d5;
+    color: white; 
+    font-size: 16px;
+    cursor: pointer; 
+    border: none;
+  }
+  
+  button:hover {
+    background-color: #2fc1ff;
+  }
+
+  .main-button{
+    width: 100%;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    height: 45px;
+    box-shadow: 2px 2px 5px 0px rgba(126, 225, 255, 0.8);
+  }
+
+  .btn-with-icon {
+    width: 100%; 
+    height: 50px;
+    display: block; 
+    border: none;
+    text-align: left;
+}
+
+  .main-buttons{
+    margin: auto;
+    width: 80%;
+    margin-top: 100px;
+}
+
+
+  .btn-group {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+}
+
+
+ i {
+    vertical-align: middle;
+    font-size: 25px;
+    padding-left: 16px;
+    padding-right: 25px;
+}
+
+ .dvfu-icon{
+    padding-left: 20px;
+    padding-top: 20px;
+    width: 80%;
+    content: url('https://univer.dvfu.ru/assets/d2ce559236f181a855fe1d8d25eea01d/img/img-myuniver-logo.svg');
 }
