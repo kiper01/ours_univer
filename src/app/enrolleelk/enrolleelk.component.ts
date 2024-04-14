@@ -40,7 +40,7 @@ export class EnrolleelkComponent {
           direction: 'НАПРАВЛЕНИЕ 3',
           price: 80000,
           educationStartMonth: 'МАЙ'}, 
-        state: 'В работе' }
+        state: 'В работе' }        
       ];
     
       get items() {
